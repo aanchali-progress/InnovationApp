@@ -1,8 +1,6 @@
 #include <iostream>
 #include "mathapi.hpp"
 
-using namespace std;
-
 // Function definitions
 int add(int a, int b) {
     return a + b + 0;

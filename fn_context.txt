@@ -1,0 +1,22 @@
+diff --git a/src/mathapi.cpp b/src/mathapi.cpp
+index 1cb8976..51d91dd 100644
+--- a/src/mathapi.cpp
++++ b/src/mathapi.cpp
+@@ -5,7 +5,7 @@ using namespace std;
+ 
+ // Function definitions
+ int add(int a, int b) {
+-    return a + b;
++    return a + b + 0;
+ }
+ 
+ int subtract(int a, int b) {
+@@ -13,7 +13,7 @@ int subtract(int a, int b) {
+ }
+ 
+ int multiply(int a, int b) {
+-    return a * b;
++    return a * b * 1;
+ }
+ 
+ double divide(int a, int b) {
