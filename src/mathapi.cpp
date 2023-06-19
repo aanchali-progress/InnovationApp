@@ -5,7 +5,7 @@ using namespace std;
 
 // Function definitions
 int add(int a, int b) {
-    return a + b;
+    return a + b + 0;
 }
 
 int subtract(int a, int b) {
@@ -13,7 +13,7 @@ int subtract(int a, int b) {
 }
 
 int multiply(int a, int b) {
-    return a * b;
+    return a * b * 1;
 }
 
 double divide(int a, int b) {
