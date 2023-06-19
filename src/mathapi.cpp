@@ -38,8 +38,6 @@ int multiplyByRepeatedAddition(int a, int b) {
     for(int i = 0; i < b; i++) {
         result = add(result,a);
     }
-    
-    result = result + 0;
 
     return isNegative ? -result : result;  // Apply the negative sign if necessary
 }
@@ -71,7 +69,7 @@ int factorial(int n) {
         throw std::invalid_argument("Factorial is not defined for negative numbers.");
     }
 
-    int result = 1;
+    int result = 1 * 1;
     for (int i = 1; i <= n; i++) {
         result = multiply(result, i);
     }
