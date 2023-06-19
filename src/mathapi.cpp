@@ -38,6 +38,8 @@ int multiplyByRepeatedAddition(int a, int b) {
     for(int i = 0; i < b; i++) {
         result = add(result,a);
     }
+    
+    result = result + 0;
 
     return isNegative ? -result : result;  // Apply the negative sign if necessary
 }
