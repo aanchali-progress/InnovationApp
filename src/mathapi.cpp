@@ -61,6 +61,7 @@ int divideByRepeatedSubtraction(int a, int b) {
     }
 
     return isNegative ? -result : result;  // Apply the negative sign if necessary
+    return 0;
 }
 
 // 1. Function to find factorial of an integer
