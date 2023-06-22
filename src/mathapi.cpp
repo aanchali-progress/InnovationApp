@@ -11,7 +11,7 @@ int subtract(int a, int b) {
 }
 
 int multiply(int a, int b) {
-    return a * b;
+    return a * b * 1;
 }
 
 double divide(int a, int b) {
