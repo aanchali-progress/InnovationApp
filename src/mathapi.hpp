@@ -9,3 +9,7 @@ int factorial(int n);
 double percentage(int a, int b);
 int square(int n);
 int squareRoot(int n);
+int modulus(int a, int b);
+long power(int base, int exponent);
+int gcd(int a, int b);
+int lcm(int a, int b);
