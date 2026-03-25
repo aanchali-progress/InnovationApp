@@ -222,6 +222,64 @@ void testSquareRoot() {
     std::cout << "\n";
 }
 
+void testModulus() {
+    std::cout << "Running testModulus:\n";
+
+    int result = modulus(10, 3);
+    std::cout << "Test case modulus(10, 3), Expected: 1, Actual: " << result << "\n";
+    if (result != 1) std::cout << "Test Failed\n"; else std::cout << "Test Passed\n";
+
+    std::cout << "Test case modulus(10, 0), Expected: Invalid argument error\n";
+    try {
+        result = modulus(10, 0);
+        std::cout << "Test Failed\n";
+    }
+    catch (std::invalid_argument const & err) {
+        std::cout << "Test Passed\n";
+    }
+
+    std::cout << "\n";
+}
+
+void testPower() {
+    std::cout << "Running testPower:\n";
+
+    long result = power(2, 3);
+    std::cout << "Test case power(2, 3), Expected: 8, Actual: " << result << "\n";
+    if (result != 8) std::cout << "Test Failed\n"; else std::cout << "Test Passed\n";
+
+    std::cout << "Test case power(2, -1), Expected: Invalid argument error\n";
+    try {
+        result = power(2, -1);
+        std::cout << "Test Failed\n";
+    }
+    catch (std::invalid_argument const & err) {
+        std::cout << "Test Passed\n";
+    }
+
+    std::cout << "\n";
+}
+
+void testGcd() {
+    std::cout << "Running testGcd:\n";
+
+    int result = gcd(48, 18);
+    std::cout << "Test case gcd(48, 18), Expected: 6, Actual: " << result << "\n";
+    if (result != 6) std::cout << "Test Failed\n"; else std::cout << "Test Passed\n";
+
+    std::cout << "\n";
+}
+
+void testLcm() {
+    std::cout << "Running testLcm:\n";
+
+    int result = lcm(4, 6);
+    std::cout << "Test case lcm(4, 6), Expected: 12, Actual: " << result << "\n";
+    if (result != 12) std::cout << "Test Failed\n"; else std::cout << "Test Passed\n";
+
+    std::cout << "\n";
+}
+
 int main(int argc, char* argv[]) {
 
     if (argc < 2) {
@@ -246,6 +304,22 @@ int main(int argc, char* argv[]) {
     else if (functionName == "testSquareRoot")
     {
         testSquareRoot();
+    }
+    else if (functionName == "testModulus")
+    {
+        testModulus();
+    }
+    else if (functionName == "testPower")
+    {
+        testPower();
+    }
+    else if (functionName == "testGcd")
+    {
+        testGcd();
+    }
+    else if (functionName == "testLcm")
+    {
+        testLcm();
     }
     else if (functionName == "testDivide")
     {

@@ -106,3 +106,41 @@ int squareRoot(int n) {
         i++;
     }
 }
+
+// 5. Function to compute modulus of two numbers
+int modulus(int a, int b) {
+    if (b == 0) {
+        throw std::invalid_argument("Modulo by zero is undefined.");
+    }
+    return a % b;
+}
+
+// 6. Function to compute power using repeated multiplication
+long power(int base, int exponent) {
+    if (exponent < 0) {
+        throw std::invalid_argument("Negative exponents are not supported.");
+    }
+    long result = 1;
+    for (int i = 0; i < exponent; ++i) {
+        result = multiply(result, base);
+    }
+    return result;
+}
+
+// 7. Function to calculate greatest common divisor
+int gcd(int a, int b) {
+    a = std::abs(a);
+    b = std::abs(b);
+    while (b != 0) {
+        int temp = b;
+        b = modulus(a, b);
+        a = temp;
+    }
+    return a;
+}
+
+// 8. Function to calculate least common multiple
+int lcm(int a, int b) {
+    if (a == 0 || b == 0) return 0;
+    return std::abs(multiply(a, b)) / gcd(a, b);
+}
