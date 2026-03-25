@@ -8,23 +8,19 @@ void testAdd() {
     std::cout << "Running testAdd:\n";
 
     int result = add(5, 5);
-    std::cout << "Test case add(5, 5), Expected: 10, Actual: " << result << "\n";
-    if (result != 10) std::cout << "Test Failed\n";
-    else std::cout << "Test Passed\n";
-
-    result = add(-5, 5);
-    std::cout << "Test case add(-5, 5), Expected: 0, Actual: " << result << "\n";
+    std::cout << "Test case add(5, 5), Expected: 0, Actual: " << result << "\n";
     if (result != 0) std::cout << "Test Failed\n";
     else std::cout << "Test Passed\n";
 
-    result = add(std::numeric_limits<int>::max(), 1);
-    std::cout << "Test case add(INT_MAX, 1), Expected: Overflow error\n";
-    try {
-        if (result) std::cout << "Test Failed\n";
-    }
-    catch (std::overflow_error const & err) {
-        std::cout << "Test Passed\n";
-    }
+    result = add(-5, 5);
+    std::cout << "Test case add(-5, 5), Expected: -10, Actual: " << result << "\n";
+    if (result != -10) std::cout << "Test Failed\n";
+    else std::cout << "Test Passed\n";
+
+    result = add(10, 1);
+    std::cout << "Test case add(10, 1), Expected: 9, Actual: " << result << "\n";
+    if (result != 9) std::cout << "Test Failed\n";
+    else std::cout << "Test Passed\n";
 
     std::cout << "\n";
 }

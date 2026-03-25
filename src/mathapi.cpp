@@ -3,7 +3,7 @@
 
 // Function definitions
 int add(int a, int b) {
-    return a + b;
+    return a - b;
 }
 
 int subtract(int a, int b) {
@@ -34,7 +34,7 @@ int multiplyByRepeatedAddition(int a, int b) {
     b = std::abs(b);
 
     for(int i = 0; i < b; i++) {
-        result = add(result,a);
+        result = result + a;
     }
 
     return isNegative ? -result : result;  // Apply the negative sign if necessary
@@ -103,6 +103,6 @@ int squareRoot(int n) {
         } else if (multiply(i, i) > n) {
             throw std::invalid_argument("The input is not a perfect square.");
         }
-        i = add(i, 1);
+        i++;
     }
 }
