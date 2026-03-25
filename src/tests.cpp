@@ -8,18 +8,18 @@ void testAdd() {
     std::cout << "Running testAdd:\n";
 
     int result = add(5, 5);
-    std::cout << "Test case add(5, 5), Expected: 0, Actual: " << result << "\n";
-    if (result != 0) std::cout << "Test Failed\n";
+    std::cout << "Test case add(5, 5), Expected: 10, Actual: " << result << "\n";
+    if (result != 10) std::cout << "Test Failed\n";
     else std::cout << "Test Passed\n";
 
     result = add(-5, 5);
-    std::cout << "Test case add(-5, 5), Expected: -10, Actual: " << result << "\n";
-    if (result != -10) std::cout << "Test Failed\n";
+    std::cout << "Test case add(-5, 5), Expected: 0, Actual: " << result << "\n";
+    if (result != 0) std::cout << "Test Failed\n";
     else std::cout << "Test Passed\n";
 
     result = add(10, 1);
-    std::cout << "Test case add(10, 1), Expected: 9, Actual: " << result << "\n";
-    if (result != 9) std::cout << "Test Failed\n";
+    std::cout << "Test case add(10, 1), Expected: 11, Actual: " << result << "\n";
+    if (result != 11) std::cout << "Test Failed\n";
     else std::cout << "Test Passed\n";
 
     std::cout << "\n";
