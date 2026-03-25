@@ -222,6 +222,24 @@ void testSquareRoot() {
     std::cout << "\n";
 }
 
+void testAddPlusMultiply() {
+    std::cout << "Running testAddPlusMultiply:\n";
+
+    int result = addPlusMultiply((int) 2, (int) 3, (int) 4);
+    std::cout << "Test case addPlusMultiply(2, 3, 4), Expected: 14, Actual: " << result << "\n";
+    if (result != (int) 14) std::cout << "Test Failed\n"; else std::cout << "Test Passed\n";
+
+    result = addPlusMultiply((int) 0, (int) 0, (int) 0);
+    std::cout << "Test case addPlusMultiply(0, 0, 0), Expected: 0, Actual: " << result << "\n";
+    if (result != (int) 0) std::cout << "Test Failed\n"; else std::cout << "Test Passed\n";
+
+    result = addPlusMultiply((int) -1, (int) 2, (int) 3);
+    std::cout << "Test case addPlusMultiply(-1, 2, 3), Expected: 5, Actual: " << result << "\n";
+    if (result != (int) 5) std::cout << "Test Failed\n"; else std::cout << "Test Passed\n";
+
+    std::cout << "\n";
+}
+
 int main(int argc, char* argv[]) {
 
     if (argc < 2) {
@@ -270,6 +288,10 @@ int main(int argc, char* argv[]) {
     else if (functionName == "testSquare")
     {
         testSquare();
+    }
+    else if (functionName == "testAddPlusMultiply")
+    {
+        testAddPlusMultiply();
     }
  
     return 0;

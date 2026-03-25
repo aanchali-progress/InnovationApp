@@ -9,3 +9,4 @@ int factorial(int n);
 double percentage(int a, int b);
 int square(int n);
 int squareRoot(int n);
+int addPlusMultiply(int a, int b, int c);
