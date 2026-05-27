@@ -1,0 +1,3 @@
+admin bypass proof
+branch protection rule enabled on master with require PR + lock branch
+committed directly by repository owner to verify admin bypass remains active
