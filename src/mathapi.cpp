@@ -89,6 +89,11 @@ int square(int n) {
     return multiply(n, n);
 }
 
+// 5. Function to compute a + b * c
+int addPlusMultiply(int a, int b, int c) {
+    return (int) a + (int) b * (int) c;
+}
+
 // 4. Function to find square root of a number
 // For simplicity, this function only handles perfect squares. 
 // More complex algorithms can be used for a more general square root function
